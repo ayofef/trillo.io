@@ -250,7 +250,6 @@
     display: flex; 
     align-items: center;
     background-color: #fff;
-    
     border-bottom: $border;
     
 
@@ -260,13 +259,13 @@
         text-transform: uppercase;
         letter-spacing: .1rem;
         padding: 1.5rem 3rem;
+        justify-items: flex-start;
+        width: 100%;
 
         @media screen and (max-width: $bp-small) {
-            font-size: 1.8rem;
             padding: 1.25rem 2rem;
         }
         @media screen and (max-width: $bp-smallest) {
-            font-size: 1.8rem;
             padding: 1rem 0rem 1rem 1rem;
         }
     }
@@ -288,10 +287,15 @@
         font-size: 1.2rem;
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: $bp-small) {
+            padding-right: 1rem;
+        }
         
     }
     &__icon-location{
-        margin-right: 0.5rem;  
+        margin-right: 0.5rem;
+
     }
 
 
@@ -310,10 +314,12 @@
         @media screen and (max-width: $bp-small) {
             padding: 0 1.5rem;
             margin-left: 1.5rem;
+            display: none;
         }
         @media screen and (max-width: $bp-smallest) {
             padding: 0 1.5rem;
             margin-left: .5rem;
+            
         }
     }
 
@@ -553,6 +559,10 @@
 /// call to action
 
 .cta{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     padding: 3.5rem 0;
     text-align-last: center;
 
