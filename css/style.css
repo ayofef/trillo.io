@@ -258,8 +258,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   padding: 1.5rem 3rem;
-  justify-items: flex-start;
-  width: 100%;
 }
 @media screen and (max-width: 37.5em) {
   .overview__heading {

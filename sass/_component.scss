@@ -259,8 +259,6 @@
         text-transform: uppercase;
         letter-spacing: .1rem;
         padding: 1.5rem 3rem;
-        justify-items: flex-start;
-        width: 100%;
 
         @media screen and (max-width: $bp-small) {
             padding: 1.25rem 2rem;
