@@ -416,6 +416,11 @@
 
     display: flex;
     flex-wrap: wrap;
+    
+    @media screen and (max-width: $bp-small) {
+        flex-direction: column;
+        
+    }
 
     &__item{
         flex: 0 0 50%;
