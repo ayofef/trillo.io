@@ -1,8 +1,8 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-    '/',
-  '/index.html',
-  '/css/style.css'
+    '/trillo.io/',
+  '/trillo.io/index.html',
+  '/trillo.io/css/style.css'
 ];
 
 self.addEventListener('install', function(event) {
