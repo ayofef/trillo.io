@@ -1,6 +1,6 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-    '/trillo.io/',
+    //'/trillo.io/',
   '/trillo.io/index.html',
   '/trillo.io/css/style.css'
 ];
