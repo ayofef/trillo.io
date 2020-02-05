@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="manifest" href="manifest.json">
         
         <title>Trillo &mdash; Your all-in-one booking website</title>
     </head>
@@ -210,5 +211,15 @@
                 </main>
             </div>
         </div>
+        <script>
+                if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then((reg) => {
+                console.log('Service worker registered.', reg);
+                });
+        });
+        }
+        </script>
     </body>
 </html>
